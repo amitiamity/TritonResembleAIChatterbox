@@ -1,0 +1,25 @@
+name: "chatterbox"
+backend: "python"
+
+input [
+  {
+    name: "TEXT"
+    data_type: TYPE_STRING
+    dims: [1]
+  }
+]
+
+output [
+  {
+    name: "AUDIO"
+    data_type: TYPE_FP32
+    dims: [-1]
+  }
+]
+
+instance_group [
+  {
+    kind: KIND_GPU
+    count: 1
+  }
+]
