@@ -25,8 +25,8 @@ model_repository/
     └── weights/
     └── Dockerfile
     └── requirements.txt
-    └── test/
-        └── test_client.py
+└── test/
+    └── test_client.py
 ``` 
 
 ## ⚙️ Prerequisites
