@@ -15,7 +15,19 @@ This repository demonstrates how to deploy and run the [ResembleAI Chatterbox TT
 ---
 
 ## 🧰 Folder Structure
-<pre><code> ```plaintext model_repository/ └── src/ ├── chatterbox/ │ ├── 1/ │ │ └── model.py # Triton Python backend model │ └── config.pbtxt ├── weights/ # Folder containing safetensors & tokenizer.json ├── Dockerfile # Custom Triton container setup ├── requirements.txt # Python deps (e.g. tritonclient, gevent) └── test/ └── test_client.py # Python client to test inference ``` </code></pre>
+ ```
+model_repository/
+└── src/
+    └── chatterbox/
+        ├── 1/
+            │ └── model.py # Python backend model
+        └── config.pbtxt
+    └── weights/
+    └── Dockerfile
+    └── requirements.txt
+    └── test/
+        └── test_client.py
+``` 
 
 ## ⚙️ Prerequisites
 
